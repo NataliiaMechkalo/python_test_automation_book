@@ -1,0 +1,32 @@
+steps_1 = ["open browser", "navigate to page", "click login"]
+steps_2 = ["open browser", "navigate to page", "fill form"]
+steps_3 = ["open browser", "navigate to page", "click login"]  # Duplicate of steps_1
+
+# Convert each scenario's steps to frozensets
+scenario_1 = frozenset(steps_1)
+scenario_2 = frozenset(steps_2)
+scenario_3 = frozenset(steps_3)
+
+# Dictionary of scenarios with frozensets
+dic_scenarios = {
+    "Test Case 1": scenario_1,
+    "Test Case 2": scenario_2,
+    "Test Case 3": scenario_3
+}
+
+
+def check_scenario(test_name, new_steps, existing_scenarios):
+    new_steps_frozen = frozenset(new_steps)
+    for existing_test_name, steps in existing_scenarios.items():
+        if steps == new_steps_frozen:
+            print(f"{test_name}: The given test scenario matches with '{existing_test_name}'.")
+            return
+    print(f"{test_name}: No matching scenario found. It is unique and can be added.")
+
+
+
+new_steps = ["open browser", "navigate to page", "click login"]
+check_scenario("Test Case 4", new_steps, dic_scenarios)
+check_scenario("Test Case 5", ["log out", "close browser"], dic_scenarios)
+check_scenario("Test Case 2", new_steps, dic_scenarios)
+check_scenario("Test Case 3", new_steps, dic_scenarios)
