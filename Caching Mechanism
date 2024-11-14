@@ -1,0 +1,15 @@
+cache = {}
+def square(n):
+    result = n*n
+    if result in cache:
+        print("retrieve cache: ", result)
+        return cache[result]
+    print("store cache: ", result)
+    cache[result] = result
+    return result
+
+square(4)
+square(5)
+square(4)
+square(4)
+square(16)
