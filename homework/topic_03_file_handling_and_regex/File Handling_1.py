@@ -23,5 +23,5 @@ lines_to_write = [
     "Hello, world!\n"  
 ]
 
-file_path = "file_handling/example_with_duplicates.txt"
+file_path = "example_with_duplicates.txt"
 create_file_with_duplicates(file_path, lines_to_write)

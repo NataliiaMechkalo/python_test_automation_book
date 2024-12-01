@@ -20,7 +20,7 @@ lines_to_write = [
 ]
 
 # Create the file with example lines
-file_path = "file_handling/example_text.txt"
+file_path = "example_text.txt"
 with open(file_path, 'w') as file:
     file.writelines(lines_to_write)
 

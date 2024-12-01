@@ -15,14 +15,14 @@ def combine_files(file1_path, file2_path, combined_file_path):
 
 # Create files
 content_file1 = ["First line of file 1\n", "Second line of file 1\n"]
-file1_path = "file_handling/file1.txt"
+file1_path = "file1.txt"
 create_file(file1_path, content_file1)
 
 content_file2 = ["First line of file 2\n", "Second line of file 2\n"]
-file2_path = "file_handling/file2.txt"
+file2_path = "file2.txt"
 create_file(file2_path, content_file2)
 
 # Combine files into a third file
-combined_file_path = "file_handling/combined_file.txt"
+combined_file_path = "combined_file.txt"
 combine_files(file1_path, file2_path, combined_file_path)
 print(f"Successfully combined {file1_path} and {file2_path} into {combined_file_path}")
