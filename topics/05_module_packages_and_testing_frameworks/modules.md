@@ -1,6 +1,6 @@
 # Section 1: Modules
 
-Python modules and Python packages (which will be covered in the next section), are two mechanisms that facilitate modular programming.
+Python modules and Python packages (which will be covered in the next [section](packages.md)), are two mechanisms that facilitate modular programming.
 
 Modular programming refers to the process of breaking a large programming task into separate, smaller, more manageable subtasks or modules. In test automation, we use individual modules as building blocks to create a test automation framework.
 
@@ -233,6 +233,7 @@ def boo():
 ```
 
 ### Practical Exercises (Drills):
+
 1. Create a module. Print some text and define a function.
 2. What built-in function is used to print the list of defined names in a namespace?
 3. Create one more module. Import the function from the first exercise. Run the module and explain the result.
